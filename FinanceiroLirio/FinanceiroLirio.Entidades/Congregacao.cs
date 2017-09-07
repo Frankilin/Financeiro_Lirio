@@ -11,16 +11,11 @@ namespace FinanceiroLirio.Entidades
         public int IdCongregacao { get; set; }
         public string Descricao { get; set; }
         public string Apelido { get; set; }
-        public string Endereco { get; set; }
-        public string Bairro { get; set; }
-        public string Cidade { get; set; }
-        public string Cep { get; set; }
-        public string Telefone { get; set; }
         public Boolean Ativo { get; set; }
         public DateTime DataInclusao { get; set; }
-        public int OperadorInclusao { get; set; }
+        public int IdEndereco { get; set; }
 
-        public virtual Usuario Usuario { get; set; }
-        public virtual List<Caixas> Caixa { get; set; }
+        public virtual List<Caixa> Caixa { get; set; }
+        public virtual Endereco Endereco { get; set; }
     }
 }

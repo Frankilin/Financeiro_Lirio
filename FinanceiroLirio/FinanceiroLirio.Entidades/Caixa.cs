@@ -13,6 +13,9 @@ namespace FinanceiroLirio.Entidades
         public decimal SaldoInicial { get; set; }
         public int IdCongregacao { get; set; }
         public DateTime DataInclusao { get; set; }
-        
+
+        public virtual Congregacao Congregacao { get; set; }
+        public virtual List<CaixaUsuario> CaixaUsuario { get; set; }
+
     }
 }

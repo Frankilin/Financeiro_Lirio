@@ -13,12 +13,13 @@ namespace FinanceiroLirio.Entidades
         public string Login { get; set; }
         public string Senha { get; set; }
         public string Email { get; set; }
-        public int IdCongregacao { get; set; }
         public Boolean Ativo { get; set; }
-        public int IdCargo { get; set; }
+        //public int IdCargo { get; set; }
         public int IdGrupoUsuario { get; set; }
-        public int IdSetor { get; set; }
+        //public int IdSetor { get; set; }
         public DateTime DataCadastro { get; set; }
+
         public virtual GrupoUsuario GrupoUsuario { get; set; }
+        //public virtual List<CaixaUsuario> CaixaUsuario { get; set; }
     }
 }

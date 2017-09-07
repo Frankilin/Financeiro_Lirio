@@ -1,11 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Camada de Modelagem", "0-Camada de Modelagem", "{B7F4E85B-3414-45F7-B879-51317062B010}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Entidades", "FinanceiroLirio.Entidades\FinanceiroLirio.Entidades.csproj", "{09B270C1-361C-432B-93B0-D2CA7F332D1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Camada de Apresentação", "1-Camada de Apresentação", "{B6A8308F-88FC-4631-BD58-2CF5CB5E088B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Camada de Regras de Negócio", "2-Camada de Regras de Negócio", "{650326C3-850B-43CA-B8FF-67FE741FA954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Camada de Infraestrutura", "3-Camada de Infraestrutura", "{C9DA7D0F-274D-47E2-8C85-7D48B1EC0491}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Camada de Utilitários", "4-Camada de Utilitários", "{3F941AA7-177A-415A-BD80-BFC8C163617D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Web", "FinanceiroLirio.Web\FinanceiroLirio.Web.csproj", "{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroListio.Infra", "FinanceiroListio.Infra\FinanceiroListio.Infra.csproj", "{A9440CE9-F426-43B7-926D-56842A30F616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +29,21 @@ Global
 		{09B270C1-361C-432B-93B0-D2CA7F332D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09B270C1-361C-432B-93B0-D2CA7F332D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09B270C1-361C-432B-93B0-D2CA7F332D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9440CE9-F426-43B7-926D-56842A30F616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9440CE9-F426-43B7-926D-56842A30F616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9440CE9-F426-43B7-926D-56842A30F616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9440CE9-F426-43B7-926D-56842A30F616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{09B270C1-361C-432B-93B0-D2CA7F332D1C} = {B7F4E85B-3414-45F7-B879-51317062B010}
+		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9} = {B6A8308F-88FC-4631-BD58-2CF5CB5E088B}
+		{A9440CE9-F426-43B7-926D-56842A30F616} = {C9DA7D0F-274D-47E2-8C85-7D48B1EC0491}
 	EndGlobalSection
 EndGlobal
