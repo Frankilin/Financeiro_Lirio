@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSource\Conexao.cs" />
+    <Compile Include="Mappings\CaixaMapping.cs" />
+    <Compile Include="Mappings\CaixaUsuarioMapping.cs" />
     <Compile Include="Mappings\GrupoUsuarioMapping.cs" />
     <Compile Include="Mappings\UsuarioMapping.cs" />
     <Compile Include="Migrations\Configuration.cs" />
