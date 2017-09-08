@@ -16,7 +16,9 @@ namespace FinanceiroListio.Infra.DataSource
         public Conexao()
             : base(ConfigurationManager.ConnectionStrings["Conexao"].ConnectionString)
         {
-
+            this.Configuration.LazyLoadingEnabled = false;
+            //Resolve o problema de formatação de caracters para o WEB API.    
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
