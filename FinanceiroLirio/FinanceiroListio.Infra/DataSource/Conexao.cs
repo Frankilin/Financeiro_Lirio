@@ -25,9 +25,11 @@ namespace FinanceiroListio.Infra.DataSource
 
             modelBuilder.Configurations.Add(new GrupoUsuarioMapping());
             modelBuilder.Configurations.Add(new UsuarioMapping());
+            modelBuilder.Configurations.Add(new CongregacaoMapping());
         }
 
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<GrupoUsuario> GrupoUsuario { get; set; }
+        public DbSet<Congregacao> Congregacao { get; set; }
     }
 }
