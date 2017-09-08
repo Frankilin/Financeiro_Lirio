@@ -44,10 +44,11 @@ namespace FinanceiroListio.Infra.Mappings
             //Data ID Endereço
             Property(c => c.IdEndereco)
                 .IsRequired();
-
-            //HasRequired(c => c.IdEndereco)
-            //    .WithMany(e => e.Endereco)
-            //    .HasForeignKey(c => c.IdEndereco);
+            
+            //Relacionamento com a tabela Endereço 
+            HasRequired(c => c.Endereco)
+                .WithMany()
+                .HasForeignKey(c => c.IdEndereco);
         }
     }
 }

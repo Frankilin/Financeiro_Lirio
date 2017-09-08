@@ -17,6 +17,6 @@ namespace FinanceiroLirio.Entidades
         public int IdCidade { get; set; }
 
         public virtual Cidade Cidade { get; set; }
-
+            
     }
 }

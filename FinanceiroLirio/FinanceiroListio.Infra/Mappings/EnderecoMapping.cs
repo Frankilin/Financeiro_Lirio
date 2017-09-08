@@ -39,12 +39,10 @@ namespace FinanceiroListio.Infra.Mappings
                 .HasMaxLength(50);
 
             //IdCidade
-            //Property(e => e.Cidade)
+            Property(e => e.IdCidade)
+                .IsRequired();
 
 
-                
-                
-                
         }
     }
 }
