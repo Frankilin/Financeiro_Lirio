@@ -107,3 +107,4 @@ F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroL
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.csprojResolveAssemblyReference.cache
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.dll
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Entidades.dll.config

@@ -10,3 +10,16 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\Enti
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.csprojResolveAssemblyReference.cache
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.csprojResolveAssemblyReference.cache
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\obj\Debug\FinanceiroListio.Infra.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroListio.Infra.dll.config
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroListio.Infra.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroListio.Infra.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\EntityFramework.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\EntityFramework.SqlServer.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroLirio.Entidades.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroLirio.Entidades.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\EntityFramework.xml
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\EntityFramework.SqlServer.xml
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroListio.Infra\bin\Debug\FinanceiroLirio.Entidades.dll.config

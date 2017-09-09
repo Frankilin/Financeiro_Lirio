@@ -28,10 +28,21 @@ namespace FinanceiroListio.Infra.DataSource
             modelBuilder.Configurations.Add(new GrupoUsuarioMapping());
             modelBuilder.Configurations.Add(new UsuarioMapping());
             modelBuilder.Configurations.Add(new CongregacaoMapping());
+            modelBuilder.Configurations.Add(new CaixaMapping());
+            modelBuilder.Configurations.Add(new CaixaUsuarioMapping());
+            modelBuilder.Configurations.Add(new CidadeMapping());
+            modelBuilder.Configurations.Add(new EstadoMapping());
+            modelBuilder.Configurations.Add(new EnderecoMapping());
         }
 
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<GrupoUsuario> GrupoUsuario { get; set; }
         public DbSet<Congregacao> Congregacao { get; set; }
+        public DbSet<CaixaUsuario> CaixaUsuario { get; set; }
+        public DbSet<Caixa> Caixa { get; set; }
+        public DbSet<Cidade> Cidade { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Estado> Estado { get; set; }
+
     }
 }

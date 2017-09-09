@@ -23,9 +23,6 @@ namespace FinanceiroListio.Infra.Mappings
                 .WithMany(c => c.Cidade)
                 .HasForeignKey(c => c.IdEstado);
 
-            HasRequired(c => c.Endereco)
-                .WithMany()
-                .Map
         }
     }
 }
