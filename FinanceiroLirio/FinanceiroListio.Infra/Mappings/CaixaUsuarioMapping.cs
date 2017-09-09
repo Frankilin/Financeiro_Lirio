@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace FinanceiroListio.Infra.Mappings
 {
-    class CaixaUsuarioMapping : EntityTypeConfiguration<CaixaUsuario>
+    public class CaixaUsuarioMapping : EntityTypeConfiguration<CaixaUsuario>
     {
         public CaixaUsuarioMapping()
         {
