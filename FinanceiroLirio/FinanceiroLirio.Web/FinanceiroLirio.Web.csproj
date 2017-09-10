@@ -88,6 +88,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -141,6 +145,10 @@
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Areas\Administrador\Views\web.config" />
+    <Content Include="Areas\PainelAdministrativo\Views\web.config" />
+    <Content Include="Areas\PainelAdministrativo\Views\Painel\Index.cshtml" />
+    <Content Include="Areas\Administrador\Views\Home\Index.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -153,11 +161,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Administrador\AdministradorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
+    <Compile Include="Areas\PainelAdministrativo\Controllers\PainelController.cs" />
+    <Compile Include="Areas\PainelAdministrativo\PainelAdministrativoAreaRegistration.cs" />
     <Compile Include="Controllers\EntrarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\UsuarioAutenticadoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +206,7 @@
     <Content Include="Content\materialize-v0.97.5\font\material-design-icons\Material-Design-Icons.eot" />
     <Content Include="Views\Entrar\Index.cshtml" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -200,7 +214,22 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\Administrador\Models\" />
+    <Folder Include="Areas\Administrador\Views\Shared\" />
+    <Folder Include="Areas\PainelAdministrativo\Models\" />
+    <Folder Include="Areas\PainelAdministrativo\Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinanceiroLirio.Entidades\FinanceiroLirio.Entidades.csproj">
+      <Project>{09b270c1-361c-432b-93b0-d2ca7f332d1c}</Project>
+      <Name>FinanceiroLirio.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanceiroLirio.Infra\FinanceiroLirio.Infra.csproj">
+      <Project>{A9440CE9-F426-43B7-926D-56842A30F616}</Project>
+      <Name>FinanceiroLirio.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
