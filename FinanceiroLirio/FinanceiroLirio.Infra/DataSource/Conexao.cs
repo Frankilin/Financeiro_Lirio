@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using FinanceiroLirio.Entidades;
-using FinanceiroListio.Infra.Mappings;
+using FinanceiroLirio.Infra.Mappings;
 
-namespace FinanceiroListio.Infra.DataSource
+namespace FinanceiroLirio.Infra.DataSource
 {
     public class Conexao : DbContext
     {
@@ -24,6 +24,7 @@ namespace FinanceiroListio.Infra.DataSource
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             modelBuilder.Configurations.Add(new GrupoUsuarioMapping());
             modelBuilder.Configurations.Add(new UsuarioMapping());

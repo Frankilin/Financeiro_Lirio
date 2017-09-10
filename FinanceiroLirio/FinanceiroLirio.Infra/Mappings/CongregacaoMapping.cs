@@ -8,7 +8,7 @@ using System.Data.Entity.Infrastructure.Annotations;
 using System.Data.Entity.ModelConfiguration;
 using FinanceiroLirio.Entidades;
 
-namespace FinanceiroListio.Infra.Mappings
+namespace FinanceiroLirio.Infra.Mappings
 {
     class CongregacaoMapping:EntityTypeConfiguration<Congregacao>
     {
@@ -47,7 +47,7 @@ namespace FinanceiroListio.Infra.Mappings
             
             //Relacionamento com a tabela Endereço 
             HasRequired(c => c.Endereco)
-                .WithMany()
+                .WithMany(o => o.Congregacao)
                 .HasForeignKey(c => c.IdEndereco);
         }
     }

@@ -1,16 +1,18 @@
 namespace FinanceiroListio.Infra.Migrations
 {
-    using FinanceiroLirio.Entidades;
+    using System;
+    using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<FinanceiroListio.Infra.DataSource.Conexao>
+    internal sealed class Configuration : DbMigrationsConfiguration<FinanceiroLirio.Infra.DataSource.Conexao>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(FinanceiroListio.Infra.DataSource.Conexao context)
+        protected override void Seed(FinanceiroLirio.Infra.DataSource.Conexao context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -24,10 +26,6 @@ namespace FinanceiroListio.Infra.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
-            context.GrupoUsuario.AddOrUpdate(
-                g => g.Descricao, new GrupoUsuario { Descricao = "Administrador"}
-                );
         }
     }
 }

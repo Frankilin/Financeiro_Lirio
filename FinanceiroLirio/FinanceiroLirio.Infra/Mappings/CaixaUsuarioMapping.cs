@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace FinanceiroListio.Infra.Mappings
+namespace FinanceiroLirio.Infra.Mappings
 {
     public class CaixaUsuarioMapping : EntityTypeConfiguration<CaixaUsuario>
     {
@@ -16,12 +16,18 @@ namespace FinanceiroListio.Infra.Mappings
             Property(c => c.DataInclusao)
                 .IsRequired();
 
+            Property(c => c.IdCaixa)
+                .IsRequired();
+
+            Property(c => c.IdUsuario)
+                .IsRequired();
+
             HasRequired(c => c.Caixa)
-                .WithMany()
+                .WithMany(x => x.CaixaUsuario)
                 .HasForeignKey(c => c.IdCaixa);
 
             HasRequired(c => c.Usuario)
-                .WithMany()
+                .WithMany(u => u.CaixaUsuario)
                 .HasForeignKey(c => c.IdUsuario);
         }
     }

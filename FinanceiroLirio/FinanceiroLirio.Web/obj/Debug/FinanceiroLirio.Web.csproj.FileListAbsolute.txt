@@ -16,7 +16,6 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLir
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Web.pdb
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\EntityFramework.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\EntityFramework.SqlServer.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroListio.Infra.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\Microsoft.AI.DependencyCollector.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -32,8 +31,6 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Ra
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Webpages.Deployment.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Webpages.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Webpages.Razor.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Entidades.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroListio.Infra.pdb
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\EntityFramework.xml
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\EntityFramework.SqlServer.xml
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\Microsoft.AI.DependencyCollector.xml
@@ -48,7 +45,6 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.We
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Webpages.Razor.xml
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Helpers.xml
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Mvc.xml
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Entidades.pdb
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.csprojResolveAssemblyReference.cache
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.pdb

@@ -2,13 +2,14 @@
 using System.Data.Entity.ModelConfiguration;
 using FinanceiroLirio.Entidades;
 
-namespace FinanceiroListio.Infra.Mappings
+namespace FinanceiroLirio.Infra.Mappings
 {
     class EnderecoMapping: EntityTypeConfiguration<Endereco>
     {
         public EnderecoMapping()
         {
             HasKey(e => e.IdEndereco);
+
             Property(e => e.IdEndereco)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
@@ -36,6 +37,9 @@ namespace FinanceiroListio.Infra.Mappings
             Property(e => e.IdCidade)
                 .IsRequired();
 
+            HasRequired(e => e.Cidade)
+                .WithMany(c => c.Endereco)
+                .HasForeignKey(e => e.IdCidade);
 
         }
     }

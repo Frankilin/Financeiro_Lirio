@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Infrastructure.Annotations;
 using System.Data.Entity.ModelConfiguration;
 
-namespace FinanceiroListio.Infra.Mappings
+namespace FinanceiroLirio.Infra.Mappings
 {
     public class CaixaMapping : EntityTypeConfiguration<Caixa>
     {
@@ -24,6 +24,9 @@ namespace FinanceiroListio.Infra.Mappings
                 .IsRequired();
 
             Property(c => c.DataInclusao)
+                .IsRequired();
+
+            Property(c => c.IdCongregacao)
                 .IsRequired();
 
             HasRequired(c => c.Congregacao)

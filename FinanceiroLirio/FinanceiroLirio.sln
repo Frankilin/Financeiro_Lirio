@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Camada de Utilitários", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Web", "FinanceiroLirio.Web\FinanceiroLirio.Web.csproj", "{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroListio.Infra", "FinanceiroListio.Infra\FinanceiroListio.Infra.csproj", "{A9440CE9-F426-43B7-926D-56842A30F616}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Infra", "FinanceiroLirio.Infra\FinanceiroLirio.Infra.csproj", "{A9440CE9-F426-43B7-926D-56842A30F616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

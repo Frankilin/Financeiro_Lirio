@@ -1,11 +1,11 @@
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.pdb
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.pdb
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.csprojResolveAssemblyReference.cache
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.pdb
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.csprojResolveAssemblyReference.cache
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.dll
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.pdb
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll.config
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll.config
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.pdb
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.dll
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.pdb

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Infrastructure.Annotations;
 using System.Data.Entity.ModelConfiguration;
 
-namespace FinanceiroListio.Infra.Mappings
+namespace FinanceiroLirio.Infra.Mappings
 {
     public class CidadeMapping : EntityTypeConfiguration<Cidade>
     {
@@ -18,6 +18,9 @@ namespace FinanceiroListio.Infra.Mappings
                 .HasMaxLength(150)
                 .HasColumnAnnotation(IndexAnnotation.AnnotationName,
                     new IndexAnnotation(new IndexAttribute("IDX_NOMECIDADE") { IsUnique = true }));
+
+            Property(c => c.IdEstado)
+                .IsRequired();
 
             HasRequired(c => c.Estado)
                 .WithMany(c => c.Cidade)
