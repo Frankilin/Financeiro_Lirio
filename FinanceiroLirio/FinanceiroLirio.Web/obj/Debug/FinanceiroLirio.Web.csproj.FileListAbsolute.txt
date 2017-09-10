@@ -104,3 +104,4 @@ F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\Finan
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.dll
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.pdb
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Entidades.dll.config
+C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\MaterialSkin.dll

@@ -10,8 +10,8 @@ namespace FinanceiroLirio.Entidades
         public int IdCaixa { get; set; }
         public DateTime DataInclusao { get; set; }
 
-        public virtual List<Caixa> Caixa { get; set; }
-        public virtual List<Usuario> Usuario { get; set; }
+        public virtual Caixa Caixa { get; set; }
+        public virtual Usuario Usuario { get; set; }
 
     }
 }

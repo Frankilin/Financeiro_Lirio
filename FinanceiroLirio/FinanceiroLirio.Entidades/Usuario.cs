@@ -20,6 +20,6 @@ namespace FinanceiroLirio.Entidades
         public DateTime DataCadastro { get; set; }
 
         public virtual GrupoUsuario GrupoUsuario { get; set; }
-        //public virtual List<CaixaUsuario> CaixaUsuario { get; set; }
+        public virtual List<CaixaUsuario> CaixaUsuario { get; set; }
     }
 }
