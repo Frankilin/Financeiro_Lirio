@@ -13,6 +13,11 @@
     <link href="~/Content/materialize-v0.97.5/css/materialize.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="~/Content/materialize-v0.97.5/js/materialize.min.js"></script>
+    <style>
+        body {
+            background-image: url('../../Content/img/Ceu.jpg');
+        }
+    </style>
 </head>
 <body>
     
@@ -22,7 +27,7 @@
     {
         @Html.AntiForgeryToken()
         
-        <div class="form-horizontal">
+        <div class="container">
             <h4>Login</h4>
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
