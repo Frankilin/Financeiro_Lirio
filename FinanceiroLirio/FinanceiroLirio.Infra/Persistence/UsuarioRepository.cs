@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 
-namespace FinanceiroLirio.Infra.Persistence
+namespace FinanceiroListio.Infra.Persistence
 {
     public class UsuarioRepository : OperacoesGenericas<Usuario>
     {

@@ -111,7 +111,3 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\System.Web.Mv
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.csprojResolveAssemblyReference.cache
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\obj\Debug\FinanceiroLirio.Web.pdb
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Regras.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Util.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Regras.pdb
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Web\bin\FinanceiroLirio.Util.pdb

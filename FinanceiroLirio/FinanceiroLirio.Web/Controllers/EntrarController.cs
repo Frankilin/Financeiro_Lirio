@@ -1,5 +1,5 @@
 ﻿using FinanceiroLirio.Web.Models;
-using FinanceiroLirio.Infra.Persistence;
+using FinanceiroListio.Infra.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,6 @@ using System.Web.Mvc;
 using FinanceiroLirio.Entidades;
 using System.Web.Security;
 using Newtonsoft.Json;
-using FinanceiroLirio.Regras;
 
 namespace FinanceiroLirio.Web.Controllers
 {
@@ -29,10 +28,9 @@ namespace FinanceiroLirio.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    //UsuarioRepository ur = new UsuarioRepository();
-                    UsuariosBusiness ub = new UsuariosBusiness();
+                    UsuarioRepository ur = new UsuarioRepository();
 
-                    Usuario u = ub.RealizarLogin(model.Login, model.Senha);
+                    Usuario u = ur.FindByLoginSenha(model.Login, model.Senha);
 
                     if(u == null)
                     {

@@ -1,5 +1,0 @@
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.pdb
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
-C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb
