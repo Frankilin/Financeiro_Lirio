@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Web", "Fina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Infra", "FinanceiroLirio.Infra\FinanceiroLirio.Infra.csproj", "{A9440CE9-F426-43B7-926D-56842A30F616}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Util", "FinanceiroLirio.Util\FinanceiroLirio.Util.csproj", "{5F21B6E6-F65D-4D7D-908C-F66424AC6440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceiroLirio.Regras", "FinanceiroLirio.Regras\FinanceiroLirio.Regras.csproj", "{9697D6E7-D7AB-411F-8199-343315419FED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{A9440CE9-F426-43B7-926D-56842A30F616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9440CE9-F426-43B7-926D-56842A30F616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9440CE9-F426-43B7-926D-56842A30F616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F21B6E6-F65D-4D7D-908C-F66424AC6440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F21B6E6-F65D-4D7D-908C-F66424AC6440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F21B6E6-F65D-4D7D-908C-F66424AC6440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F21B6E6-F65D-4D7D-908C-F66424AC6440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9697D6E7-D7AB-411F-8199-343315419FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9697D6E7-D7AB-411F-8199-343315419FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9697D6E7-D7AB-411F-8199-343315419FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9697D6E7-D7AB-411F-8199-343315419FED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +57,7 @@ Global
 		{09B270C1-361C-432B-93B0-D2CA7F332D1C} = {B7F4E85B-3414-45F7-B879-51317062B010}
 		{0F2A1C9F-D3EF-4DE5-93D7-C9B5322F91E9} = {B6A8308F-88FC-4631-BD58-2CF5CB5E088B}
 		{A9440CE9-F426-43B7-926D-56842A30F616} = {C9DA7D0F-274D-47E2-8C85-7D48B1EC0491}
+		{5F21B6E6-F65D-4D7D-908C-F66424AC6440} = {3F941AA7-177A-415A-BD80-BFC8C163617D}
+		{9697D6E7-D7AB-411F-8199-343315419FED} = {650326C3-850B-43CA-B8FF-67FE741FA954}
 	EndGlobalSection
 EndGlobal
