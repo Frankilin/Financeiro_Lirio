@@ -3,10 +3,26 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>_layout</title>
+    <title>Financeiro Lírio - @ViewBag.Titulo</title>
+    <link href="~/Content/materialize-v0.97.5/css/materialize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/materialize-v0.97.5/js/materialize.min.js"></script>
 </head>
 <body>
-    <a href="/Entrar/Sair">Sair</a>
-    @RenderBody()
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Financeiro Lírio</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/Entrar/Sair">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Page Content goes here -->
+        
+        @RenderBody()
+    </div>
 </body>
 </html>

@@ -12,6 +12,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         // GET: Administrador/Home
         public ActionResult Index()
         {
+            ViewBag.Titulo = "Início";
             return View();
         }
     }
