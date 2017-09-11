@@ -229,6 +229,10 @@
       <Project>{A9440CE9-F426-43B7-926D-56842A30F616}</Project>
       <Name>FinanceiroLirio.Infra</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FinanceiroLirio.Regras\FinanceiroLirio.Regras.csproj">
+      <Project>{9697d6e7-d7ab-411f-8199-343315419fed}</Project>
+      <Name>FinanceiroLirio.Regras</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
