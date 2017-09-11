@@ -225,9 +225,9 @@
       <Project>{09b270c1-361c-432b-93b0-d2ca7f332d1c}</Project>
       <Name>FinanceiroLirio.Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FinanceiroLirio.Infra\FinanceiroLirio.Infra.csproj">
-      <Project>{A9440CE9-F426-43B7-926D-56842A30F616}</Project>
-      <Name>FinanceiroLirio.Infra</Name>
+    <ProjectReference Include="..\FinanceiroLirio.Regras\FinanceiroLirio.Regras.csproj">
+      <Project>{ed460ffe-ef58-4694-a02c-a4fbb72ca2e1}</Project>
+      <Name>FinanceiroLirio.Regras</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
