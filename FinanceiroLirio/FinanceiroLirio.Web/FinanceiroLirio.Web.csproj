@@ -137,6 +137,7 @@
     <Content Include="App_Data\Banco_log.ldf">
       <DependentUpon>Banco.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Images\your-logo-here.png" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.css" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.min.css" />
     <Content Include="Content\materialize-v0.97.5\font\material-design-icons\LICENSE.txt" />
@@ -149,6 +150,7 @@
     <Content Include="Areas\PainelAdministrativo\Views\web.config" />
     <Content Include="Areas\PainelAdministrativo\Views\Painel\Index.cshtml" />
     <Content Include="Areas\Administrador\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Administrador\Views\Congregacao\Nova.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -162,7 +164,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Administrador\AdministradorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrador\Controllers\CongregacaoController.cs" />
     <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
     <Compile Include="Areas\PainelAdministrativo\Controllers\PainelController.cs" />
     <Compile Include="Areas\PainelAdministrativo\PainelAdministrativoAreaRegistration.cs" />
     <Compile Include="Controllers\EntrarController.cs" />
@@ -215,7 +219,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Administrador\Models\" />
     <Folder Include="Areas\Administrador\Views\Shared\" />
     <Folder Include="Areas\PainelAdministrativo\Models\" />
     <Folder Include="Areas\PainelAdministrativo\Views\Shared\" />

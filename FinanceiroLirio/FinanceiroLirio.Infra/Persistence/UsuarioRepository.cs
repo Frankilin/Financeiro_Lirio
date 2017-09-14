@@ -1,6 +1,6 @@
 ﻿using FinanceiroLirio.Entidades;
 using FinanceiroLirio.Infra.DataSource;
-using FinnceiroLirio.Infra.Generics;
+using FinanceiroLirio.Infra.Generics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
