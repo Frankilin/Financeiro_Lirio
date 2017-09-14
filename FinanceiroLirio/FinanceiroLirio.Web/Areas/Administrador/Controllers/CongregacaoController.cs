@@ -16,26 +16,23 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         [Authorize(Roles = "Administrador")]
         public ActionResult Nova()
         {
-            CidadeBusiness cb = new CidadeBusiness();
-
-            var model = new CadastroCongregacaoModel();
-
-            List<Cidade> tmp = cb.TodasCidades();
-
-            var itens = new List<SelectListItem>();
-
-            foreach (Cidade c in tmp)
+            try
             {
-                itens.Add(new SelectListItem { Value = c.IdCidade.ToString(), Text = c.Nome });
+                CidadeBusiness cb = new CidadeBusiness();
+
+                var model = new CadastroCongregacaoModel();
+
+                model.Cidade = cb.ListaTodasCidadesDropdownlist();
+                ViewBag.ListaItensEstados = cb.ListaTodasCidadesDropdownlist();
+                ViewBag.Titulo = "Cadastrar congregação";
+                return View(model);
             }
-
-            SelectList sl = new SelectList(itens, "Value", "Text");
-
-            model.Cidade = sl;
-            ViewBag.ListaItensEstados = sl;
-            ViewBag.Titulo = "Cadastrar congregação";
-
-            return View(model);
+            catch (Exception e)
+            {
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                TempData["Resposta"] = "Falha";
+                return RedirectToAction("Index", "Home");
+            }
         }
 
         [HttpPost]
@@ -50,15 +47,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 
                     c.Apelido = model.Apelido;
                     c.Descricao = model.Descricao;
-                    //c.Endereco = new Endereco();
-
-                    //c.Endereco.Rua = model.Rua;
-                    //c.Endereco.Numero = model.Numero;
-                    //c.Endereco.Cep = model.Cep;
-                    //c.Endereco.Bairro = model.Bairro;
-                    //c.Endereco.IdCidade = model.CidadeSelecionada;
-                    //c.Endereco.Complemento = model.Complemento;
-
                     Endereco e = new Endereco();
 
                     e.Rua = model.Rua;
@@ -87,32 +75,43 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Resposta"] = "Falha";
             }
 
+            CidadeBusiness cib = new CidadeBusiness();
+            model.Cidade = cib.ListaTodasCidadesDropdownlist();
+
+            return View(model);
+        }
+
+        [Authorize(Roles = "Administrador")]
+        public ActionResult Lista()
+        {
+            List<ListaCongregacaoModel> lista = new List<ListaCongregacaoModel>();
             try
             {
-                CidadeBusiness cb = new CidadeBusiness();
-                List<Cidade> tmp = cb.TodasCidades();
-
-                var itens = new List<SelectListItem>();
-
-                foreach (Cidade c in tmp)
+                CongregacaoBusiness cb = new CongregacaoBusiness();
+                List<Congregacao> c = cb.TodasCongregacoes();
+                
+                foreach (Congregacao o in c)
                 {
-                    itens.Add(new SelectListItem { Value = c.IdCidade.ToString(), Text = c.Nome });
+                    ListaCongregacaoModel tmp = new ListaCongregacaoModel();
+
+                    tmp.Apelido = o.Apelido;
+                    tmp.Cidade = o.Endereco.Cidade.Nome;
+                    tmp.Estado = o.Endereco.Cidade.Estado.Nome;
+                    tmp.IdCongregacao = o.IdCongregacao;
+
+                    lista.Add(tmp);
+                    
                 }
-
-                SelectList sl = new SelectList(itens, "Value", "Text");
-
-                model.Cidade = sl;
-                ViewBag.ListaItensEstados = sl;
-                ViewBag.Titulo = "Cadastrar congregação";
+                return View(lista);
             }
             catch(Exception e)
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
+                return RedirectToAction("Index", "Home");
             }
-            return View(model);
+            
         }
-
         
     }
 }

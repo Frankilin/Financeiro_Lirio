@@ -151,6 +151,7 @@
     <Content Include="Areas\PainelAdministrativo\Views\Painel\Index.cshtml" />
     <Content Include="Areas\Administrador\Views\Home\Index.cshtml" />
     <Content Include="Areas\Administrador\Views\Congregacao\Nova.cshtml" />
+    <Content Include="Areas\Administrador\Views\Congregacao\Lista.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -167,6 +168,7 @@
     <Compile Include="Areas\Administrador\Controllers\CongregacaoController.cs" />
     <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
+    <Compile Include="Areas\Administrador\Models\ListaCongregacaoModel.cs" />
     <Compile Include="Areas\PainelAdministrativo\Controllers\PainelController.cs" />
     <Compile Include="Areas\PainelAdministrativo\PainelAdministrativoAreaRegistration.cs" />
     <Compile Include="Controllers\EntrarController.cs" />

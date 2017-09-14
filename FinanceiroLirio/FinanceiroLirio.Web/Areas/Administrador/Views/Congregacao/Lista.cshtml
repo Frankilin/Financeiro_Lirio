@@ -1,0 +1,46 @@
+﻿@model IEnumerable<FinanceiroLirio.Web.Areas.Administrador.Models.ListaCongregacaoModel>
+
+@{
+    ViewBag.Titulo = "Lista";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<h4 class="right-align">Lista de congregações</h4><hr />
+
+<p>
+    @Html.ActionLink("Nova Congregação", "Nova", "Congregacao")
+</p>
+<table class="striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Apelido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </th>
+        <th>Opções</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apelido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+        </td>
+    </tr>
+}
+
+</table>

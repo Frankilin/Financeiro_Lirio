@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace FinanceiroLirio.Regras
 {
     public class CongregacaoBusiness
@@ -37,6 +38,29 @@ namespace FinanceiroLirio.Regras
 
                 cr.Insert(c);
                 
+                return c;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public List<Congregacao> TodasCongregacoes()//função na business que retornará uma listagem de congregações
+        {
+            try
+            {
+                List<Congregacao> c = null;
+
+                CongregacaoRepository cr = new CongregacaoRepository();
+
+                c = cr.All();
+
+                if(c == null)
+                {
+                    throw new Exception("Nenhuma congregação encontrada.");
+                }
+
                 return c;
             }
             catch(Exception e)
