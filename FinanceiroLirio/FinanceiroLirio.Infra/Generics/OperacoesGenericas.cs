@@ -7,7 +7,7 @@ using System.Data.Entity;
 using FinanceiroLirio.Entidades;
 using FinanceiroLirio.Infra.DataSource;
 
-namespace FinnceiroLirio.Infra.Generics
+namespace FinanceiroLirio.Infra.Generics
 {
     public abstract class OperacoesGenericas<TEntity>
         where TEntity : class
@@ -46,7 +46,7 @@ namespace FinnceiroLirio.Infra.Generics
             }
         }
 
-        public virtual List<TEntity> All(TEntity obj)
+        public virtual List<TEntity> All()
         {
             using (Conexao con = new Conexao())
             {
