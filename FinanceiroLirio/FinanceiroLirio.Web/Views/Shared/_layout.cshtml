@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@using Newtonsoft.Json
+@using FinanceiroLirio.Web.Models
+@{
+    //capturando os dados em JSON do usuario autenticado..
+    string usuario = HttpContext.Current.User.Identity.Name;
+    //deserializar os dados de JSON para objeto..
+    var auth = JsonConvert.DeserializeObject<UsuarioAutenticadoModel>(usuario);
+
+}
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -11,18 +21,55 @@
     <script src="~/Content/materialize-v0.97.5/js/materialize.min.js"></script>
 </head>
 <body>
-    <nav>
+    @*<nav>
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">Financeiro Lírio</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/Entrar/Sair">Sair</a></li>
             </ul>
         </div>
-    </nav>
+    </nav>*@
     <div class="container">
         <!-- Page Content goes here -->
-        
-        @RenderBody()
+        <div class="row col s12">
+            <div class="col s2">
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="~/Content/Images/your-logo-here.png" />
+                            </div>
+                            <a href="#!nome"><span class="black-text name">@auth.NomeCompleto</span></a>
+                        </div>
+                    </li>
+                    @*<li><div class="divider"></div></li>*@
+                    <li>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <a class="collapsible-header waves-effect waves">Congregação</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="/Administrador/Congregacao/Nova" class="waves-effect waves">Nova congregação</a></li>
+                                        <li><a href="/Administrador/Congregacao/Lista" class="waves-effect waves">Listar congregações</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="/Entrar/Sair">Sair</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+            <div class="col s9">
+                @RenderBody()
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
