@@ -1,0 +1,115 @@
+﻿@model FinanceiroLirio.Web.Areas.Administrador.Models.CadastroCongregacaoModel
+
+@{
+    ViewBag.Title = "Nova";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="row">
+        <h4 class="right-align">Cadastro de congregações</h4>
+        <hr /> 
+        @if (TempData["Mensagem"] != null)
+            {
+                if (TempData["Resposta"].ToString() == "Sucesso")
+                {
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card green lighten-1">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Mensagem</span>
+                                    <p>
+                                        @TempData["Mensagem"].ToString()
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else if (TempData["Resposta"].ToString() == "Falha")
+                {
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card red lighten-1">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Mensagem</span>
+                                    <p>
+                                        @TempData["Mensagem"].ToString()
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <h5>Congregação</h5>
+            <div class="input-field col s5">
+                @Html.EditorFor(model => model.Descricao)
+                @Html.LabelFor(model => model.Descricao)
+                @Html.ValidationMessageFor(model => model.Descricao, "", new { @class = "text-danger" })
+            </div>
+            <div class="input-field col s4">
+                @Html.EditorFor(model => model.Apelido)
+                @Html.LabelFor(model => model.Apelido)
+                @Html.ValidationMessageFor(model => model.Apelido, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <h5>Endereço</h5>
+            <div class="input-field col s4">
+                @Html.EditorFor(model => model.Rua)
+                @Html.LabelFor(model => model.Rua)
+                @Html.ValidationMessageFor(model => model.Rua, "", new { @class = "text-danger" })
+            </div>
+            <div class="input-field col s2">
+                @Html.EditorFor(model => model.Numero)
+                @Html.LabelFor(model => model.Numero)
+                @Html.ValidationMessageFor(model => model.Numero, "", new { @class = "text-danger" })
+            </div>
+            <div class="input-field col s3">
+                @Html.EditorFor(model => model.Complemento)
+                @Html.LabelFor(model => model.Complemento)
+                @Html.ValidationMessageFor(model => model.Complemento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s2">
+                @Html.EditorFor(model => model.Cep)
+                @Html.LabelFor(model => model.Cep)
+                @Html.ValidationMessageFor(model => model.Cep, "", new { @class = "text-danger" })
+            </div>
+            <div class="input-field col s3">
+                @Html.EditorFor(model => model.Bairro)
+                @Html.LabelFor(model => model.Bairro)
+                @Html.ValidationMessageFor(model => model.Bairro, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s4">
+                @Html.DropDownListFor(model => model.CidadeSelecionada, Model.Cidade, "Value", "Text")
+
+                @Html.LabelFor(model => model.CidadeSelecionada)
+                @Html.ValidationMessageFor(model => model.CidadeSelecionada, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s2 offset-s4">
+                <a href="/Administrador/Home/Index" style="background-color:#e54016;color:white" class="btn waves-effect waves-light">
+                    <i class="material-icons center">cancel</i>
+                </a>
+            </div>
+            <div class="input-field col s2">
+                <button class="btn waves-effect waves-light" style="background-color:#08db3d;color:white" type="submit">
+                    <i class="material-icons center">save</i>
+                </button>
+            </div>
+        </div>
+    </div>
+}
