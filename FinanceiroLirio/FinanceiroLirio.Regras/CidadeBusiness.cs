@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace FinanceiroLirio.Regras
 {
@@ -70,6 +71,29 @@ namespace FinanceiroLirio.Regras
                 }
 
                 return c;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public SelectList ListaTodasCidadesDropdownlist()
+        {
+            try
+            {
+                List<Cidade> tmp = this.TodasCidades();
+
+                var itens = new List<SelectListItem>();
+
+                foreach (Cidade c in tmp)
+                {
+                    itens.Add(new SelectListItem { Value = c.IdCidade.ToString(), Text = c.Nome });
+                }
+
+                SelectList sl = new SelectList(itens, "Value", "Text");
+
+                return sl;
             }
             catch(Exception e)
             {
