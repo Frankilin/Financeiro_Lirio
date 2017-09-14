@@ -113,6 +113,37 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Administrador")]
+        public ActionResult Lista()
+        {
+            List<ListaCongregacaoModel> lista = new List<ListaCongregacaoModel>();
+            try
+            {
+                CongregacaoBusiness cb = new CongregacaoBusiness();
+                List<Congregacao> c = cb.TodasCongregacoes();
+                
+                foreach (Congregacao o in c)
+                {
+                    ListaCongregacaoModel tmp = new ListaCongregacaoModel();
+
+                    tmp.Apelido = o.Apelido;
+                    tmp.Cidade = o.Endereco.Cidade.Nome;
+                    tmp.Estado = o.Endereco.Cidade.Estado.Nome;
+                    tmp.IdCongregacao = o.IdCongregacao;
+
+                    lista.Add(tmp);
+                    
+                }
+                return View(lista);
+            }
+            catch(Exception e)
+            {
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                TempData["Resposta"] = "Falha";
+                return RedirectToAction("Index", "Home");
+            }
+            
+        }
         
     }
 }
