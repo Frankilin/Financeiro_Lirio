@@ -13,7 +13,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
     {
         // GET: Administrador/Usuario
         [Authorize(Roles = "Administrador")]
-        public ActionResult Nova()
+        public ActionResult Novo()
         {
             try
             {
@@ -27,13 +27,13 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Nova", "Home");
+                return RedirectToAction("Novo", "Home");
             }
         }
 
         [HttpPost]
         [Authorize(Roles = "Administrador")]
-        public ActionResult Nova(CadastroUsuarioModel model)
+        public ActionResult Novo(CadastroUsuarioModel model)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Nova", "Home");
+                return RedirectToAction("Novo", "Home");
             }
         }
     }

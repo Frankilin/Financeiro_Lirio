@@ -26,7 +26,6 @@ namespace FinanceiroLirio.Regras
                     throw new Exception("Informe o Login.");
                 }
 
-                u.IdUsuario = 10;
                 u.Ativo = true;
                 u.DataCadastro = DateTime.Now;
                 u.IdGrupoUsuario = 3;
