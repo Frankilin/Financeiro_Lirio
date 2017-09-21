@@ -17,7 +17,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador
             context.MapRoute(
                 "Administrador_default",
                 "Administrador/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Nova", id = UrlParameter.Optional }
             );
         }
     }

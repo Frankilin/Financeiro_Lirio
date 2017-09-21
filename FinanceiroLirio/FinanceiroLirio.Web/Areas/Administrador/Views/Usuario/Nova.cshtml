@@ -1,0 +1,119 @@
+﻿@model FinanceiroLirio.Web.Areas.Administrador.Models.CadastroUsuarioModel
+
+@{
+    ViewBag.Title = "Nova";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Financeiro Lírio</title>
+    <link href="~/Content/materialize-v0.97.5/css/materialize.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/materialize-v0.97.5/js/materialize.min.js"></script>
+</head>
+<body>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <h4 class="right-align">Cadastro de usuários</h4>
+            <hr />
+            @if (TempData["Mensagem"] != null)
+            {
+                if (TempData["Resposta"].ToString() == "Sucesso")
+                {
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card green lighten-1">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Mensagem</span>
+                                    <p>
+                                        @TempData["Mensagem"].ToString()
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else if (TempData["Resposta"].ToString() == "Falha")
+                {
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card red lighten-1">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Mensagem</span>
+                                    <p>
+                                        @TempData["Mensagem"].ToString()
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NomeCompleto, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.NomeCompleto, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.NomeCompleto, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-field col s12">
+                        @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "validate" } })
+                        @Html.LabelFor(model => model.Senha)
+                        @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="input-field col s2 offset-s4">
+                    <a href="/Administrador/Home/Index" style="background-color:#e54016;color:white" class="btn waves-effect waves-light">
+                        <i class="material-icons center">cancel</i>
+                    </a>
+                </div>
+                <div class="input-field col s2">
+                    <button class="btn waves-effect waves-light" style="background-color:#08db3d;color:white" type="submit">
+                        <i class="material-icons center">save</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

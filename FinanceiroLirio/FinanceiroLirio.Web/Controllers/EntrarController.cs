@@ -53,10 +53,10 @@ namespace FinanceiroLirio.Web.Controllers
 
                     if(aut.GrupoUsuario == "Administrador")
                     {
-                        return RedirectToAction("Index", "Home", new { area = "Administrador" });//acesso master
+                        return RedirectToAction("Nova", "Home", new { area = "Administrador" });//acesso master
                     }else if(aut.GrupoUsuario == "Operador")
                     {
-                        return RedirectToAction("Index", "Painel", new { area = "PainelAdministrativo" });//operadores comuns
+                        return RedirectToAction("Nova", "Painel", new { area = "PainelAdministrativo" });//operadores comuns
                     }
                 }
             }
@@ -77,7 +77,7 @@ namespace FinanceiroLirio.Web.Controllers
             {
                 ViewBag.Mensagem(e.Message);
             }
-            return Redirect("Index");
+            return Redirect("Nova");
         }
     }
 }

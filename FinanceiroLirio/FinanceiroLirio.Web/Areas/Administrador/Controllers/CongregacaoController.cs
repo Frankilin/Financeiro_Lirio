@@ -31,7 +31,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Nova", "Home");
             }
         }
 
@@ -108,7 +108,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Nova", "Home");
             }
             
         }
