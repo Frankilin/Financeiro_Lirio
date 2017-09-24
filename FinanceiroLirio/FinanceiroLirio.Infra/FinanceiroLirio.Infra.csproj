@@ -61,6 +61,7 @@
     <Compile Include="Mappings\GrupoUsuarioMapping.cs" />
     <Compile Include="Mappings\UsuarioMapping.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\CaixaRepository.cs" />
     <Compile Include="Persistence\CidadeRepository.cs" />
     <Compile Include="Persistence\CongregacaoRepository.cs" />
     <Compile Include="Persistence\EnderecoRepository.cs" />

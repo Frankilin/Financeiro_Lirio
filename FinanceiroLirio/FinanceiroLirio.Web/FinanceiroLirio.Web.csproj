@@ -154,6 +154,7 @@
     <Content Include="Areas\Administrador\Views\Congregacao\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Nova.cshtml" />
+    <Content Include="Areas\Administrador\Views\Caixa\NovoCaixa.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -167,9 +168,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Administrador\AdministradorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrador\Controllers\CaixaController.cs" />
     <Compile Include="Areas\Administrador\Controllers\CongregacaoController.cs" />
     <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
     <Compile Include="Areas\Administrador\Controllers\UsuarioController.cs" />
+    <Compile Include="Areas\Administrador\Models\CadastroCaixaModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroUsuarioModel.cs" />
     <Compile Include="Areas\Administrador\Models\ListaCongregacaoModel.cs" />

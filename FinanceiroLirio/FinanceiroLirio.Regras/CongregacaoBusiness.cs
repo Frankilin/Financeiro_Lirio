@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Web.Mvc;
 
 namespace FinanceiroLirio.Regras
 {
@@ -27,12 +27,6 @@ namespace FinanceiroLirio.Regras
                 
                 c.Ativo = true;
                 c.DataInclusao = DateTime.Now;
-
-                //EnderecoBusiness eb = new EnderecoBusiness();
-
-                //c.Endereco = eb.NovoEndereco(c.Endereco);
-
-                //c.IdEndereco = c.Endereco.IdEndereco;
 
                 CongregacaoRepository cr = new CongregacaoRepository();
 
@@ -64,6 +58,30 @@ namespace FinanceiroLirio.Regras
                 return c;
             }
             catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+
+        public SelectList ListaTodasCongragacoesDropdownlist()
+        {
+            try
+            {
+                List<Congregacao> tmp = this.TodasCongregacoes();
+
+                var itens = new List<SelectListItem>();
+
+                foreach (Congregacao c in tmp)
+                {
+                    itens.Add(new SelectListItem { Value = c.IdCongregacao.ToString(), Text = c.Descricao });
+                }
+
+                SelectList sl = new SelectList(itens, "Value", "Text");
+
+                return sl;
+            }
+            catch (Exception e)
             {
                 throw e;
             }

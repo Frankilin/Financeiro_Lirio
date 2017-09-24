@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaixaBusiness.cs" />
     <Compile Include="CidadeBusiness.cs" />
     <Compile Include="CongregacaoBusiness.cs" />
     <Compile Include="EnderecoBusiness.cs" />

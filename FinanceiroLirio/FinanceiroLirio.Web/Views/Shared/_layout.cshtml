@@ -39,11 +39,44 @@
                             <div class="background">
                                 <img src="~/Content/Images/your-logo-here.png" />
                             </div>
-                            <a href="#!nome"><span class="black-text name">@auth.NomeCompleto</span></a>
+                            <a href="#!nome"><span class="black-text name"><b>Usuário:</b> @auth.NomeCompleto</span></a>
                         </div>
                     </li>
                     @*<li><div class="divider"></div></li>*@
-                    <li>
+                    
+
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">location_city</i>Congregação<i class="material-icons" style="float:right">arrow_drop_down</i></div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="/Administrador/Congregacao/Nova" class="waves-effect waves">Nova congregação</a></li>
+                                        <li><a href="/Administrador/Congregacao/Lista" class="waves-effect waves">Listar congregações</a></li>
+                                    </ul>
+                                 </div>
+                            </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">person_add</i>Usuarios<i class="material-icons" style="float:right">arrow_drop_down</i></div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/Administrador/Usuario/Nova" class="waves-effect waves">Novo usuário</a></li>
+                                    <li><a href="/Administrador/Usuario/Lista" class="waves-effect waves">Listar usuários</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">card_travel</i>Caixas<i class="material-icons" style="float:right">arrow_drop_down</i></div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/Administrador/Caixa/NovoCaixa" class="waves-effect waves">Novo Caixa</a></li>
+                                    <li><a href="/Administrador/Caixa/Lista" class="waves-effect waves">Listar Caixas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                    @*<li>
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
                                 <a class="collapsible-header waves-effect waves">Congregação</a>
@@ -64,7 +97,9 @@
                                 </div>
                             </li>
                         </ul>
-                    </li>
+                    </li>*@
+
+
                     <li class=""><a href="/Entrar/Sair">Sair</a></li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
