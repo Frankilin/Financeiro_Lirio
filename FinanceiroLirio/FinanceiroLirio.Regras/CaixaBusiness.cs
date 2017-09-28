@@ -29,12 +29,12 @@ namespace FinanceiroLirio.Regras
 
                     //Verifica se o IdCongregação está nulo
                     CongregacaoRepository cr = new CongregacaoRepository();
-                    Congregacao cg  = cr.FindById(C.IdCongregacao);
+                    Congregacao cg = cr.FindById(C.IdCongregacao);
                     if (cg == null)
                     {
                         throw new Exception("Congregação selecionada não encontrada na base");
                     }
-                    
+
                     //Passa a data e hora atual
                     CaixaRepository cx = new CaixaRepository();
                     C.DataInclusao = DateTime.Now;
@@ -44,6 +44,27 @@ namespace FinanceiroLirio.Regras
 
                 }
 
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+        public List<Caixa> ListaTodosCaixas()
+        {
+            try
+            {
+                
+                CaixaRepository cr = new CaixaRepository();
+                
+                List<Caixa> c = cr.All();
+                if (c == null)
+                {
+                       throw new Exception("Lista de caixas não encontrado!");
+                }
+                return c;
             }
             catch (Exception e)
             {

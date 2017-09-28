@@ -52,8 +52,37 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
             }
-            return RedirectToAction("NovoCaixa", "Caixa");
-                                    
+            return RedirectToAction("NovoCaixa", "Caixa");                          
+        }
+
+        [Authorize(Roles = "Administrador")]
+        public ActionResult ListaCaixas()
+        {
+            List<ListaCaixasModel> lista = new List<ListaCaixasModel>();
+
+            try
+            {
+                CaixaBusiness cb = new CaixaBusiness();
+                List<Caixa> c = cb.ListaTodosCaixas();
+
+                foreach (Caixa ca in c)
+                {
+                    ListaCaixasModel lcm = new ListaCaixasModel();
+
+                    lcm.CongregacaoSelecionada = ca.IdCongregacao;
+                    lcm.Descricao = ca.Descricao;
+                    lcm.SaldoInicial = ca.SaldoInicial;
+
+                    lista.Add(lcm);
+                }
+                return View(lista);
+            }
+            catch (Exception e)
+            {
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                TempData["Resposta"] = "Falha";
+                return RedirectToAction("Novo", "Home");
+            }
         }
     }
 }

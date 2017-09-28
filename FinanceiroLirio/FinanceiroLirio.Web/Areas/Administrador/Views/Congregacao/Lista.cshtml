@@ -4,43 +4,56 @@
     ViewBag.Titulo = "Lista";
     Layout = "~/Views/Shared/_layout.cshtml";
 }
+<head>
+    <style>
+        .link {
+             color:white;
+        }        
+    </style>
+</head>
 
-<h4 class="right-align">Lista de congregações</h4><hr />
+<h4 class="left-align">Lista de congregações</h4><hr />
+<br />
 
-<p>
-    @Html.ActionLink("Nova Congregação", "Nova", "Congregacao")
-</p>
-<table class="striped">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Apelido)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Estado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cidade)
-        </th>
-        <th>Opções</th>
-    </tr>
+<button class="btn waves-effect waves-light">
+    @Html.ActionLink("Nova", "Nova", "Congregacao",new {@class="link"})
+    <i class="material-icons right">add_circle</i>
+</button>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Apelido)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cidade)
-        </td>
-        <td>
-            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
-        </td>
-    </tr>
-}
+<div class="card-panel grey lighten-5 z-depth-1">
+    <table class="striped">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Apelido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>Opções</th>
+        </tr>
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apelido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

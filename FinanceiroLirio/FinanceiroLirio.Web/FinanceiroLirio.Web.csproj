@@ -137,6 +137,7 @@
     <Content Include="App_Data\Banco_log.ldf">
       <DependentUpon>Banco.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Images\Lirio.fw.png" />
     <Content Include="Content\Images\your-logo-here.png" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.css" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.min.css" />
@@ -155,6 +156,7 @@
     <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Nova.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\NovoCaixa.cshtml" />
+    <Content Include="Areas\Administrador\Views\Caixa\ListaCaixas.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -175,6 +177,7 @@
     <Compile Include="Areas\Administrador\Models\CadastroCaixaModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroUsuarioModel.cs" />
+    <Compile Include="Areas\Administrador\Models\ListaCaixasModel.cs" />
     <Compile Include="Areas\Administrador\Models\ListaCongregacaoModel.cs" />
     <Compile Include="Areas\PainelAdministrativo\Controllers\PainelController.cs" />
     <Compile Include="Areas\PainelAdministrativo\PainelAdministrativoAreaRegistration.cs" />
