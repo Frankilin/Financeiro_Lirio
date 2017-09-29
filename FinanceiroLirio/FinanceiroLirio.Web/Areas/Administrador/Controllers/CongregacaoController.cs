@@ -73,10 +73,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Resposta"] = "Falha";
             }
 
-            CidadeBusiness cib = new CidadeBusiness();
-            model.Cidade = cib.ListaTodasCidadesDropdownlist();
-
-            return View(model);
+            return RedirectToAction("Nova");
         }
 
         
