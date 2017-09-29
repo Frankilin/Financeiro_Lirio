@@ -8,3 +8,8 @@ F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\Fina
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
 F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb
+C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.dll
+C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.pdb
+C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
+C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
+C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb

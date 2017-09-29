@@ -17,7 +17,7 @@ namespace FinanceiroLirio.Web.Areas.PainelAdministrativo
             context.MapRoute(
                 "PainelAdministrativo_default",
                 "PainelAdministrativo/{controller}/{action}/{id}",
-                new { action = "Novo", id = UrlParameter.Optional }
+                new { action = "Index", id = UrlParameter.Optional }
             );
         }
     }

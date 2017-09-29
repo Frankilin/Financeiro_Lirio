@@ -16,8 +16,8 @@ namespace FinanceiroLirio.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Entrar", action = "Index", id = UrlParameter.Optional }
-                //namespaces: new[] { "FinanceiroLirio.Web.Controllers","EntrarController" }
+                defaults: new { controller = "Entrar", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "FinanceiroLirio.Web.Controllers","EntrarController" }
             );
         }
     }
