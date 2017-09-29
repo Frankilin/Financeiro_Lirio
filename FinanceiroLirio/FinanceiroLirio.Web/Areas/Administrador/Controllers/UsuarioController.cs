@@ -9,10 +9,11 @@ using System.Web.Mvc;
 
 namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class UsuarioController : Controller
     {
         // GET: Administrador/Usuario
-        [Authorize(Roles = "Administrador")]
+        
         public ActionResult Novo()
         {
             try
@@ -32,7 +33,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Administrador")]
         public ActionResult Novo(CadastroUsuarioModel model)
         {
             try
@@ -65,7 +65,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             return View(model);
         }
 
-        [Authorize(Roles = "Administrador")]
         public ActionResult Lista()
         {
             List<ListaUsuarioModel> lista = new List<ListaUsuarioModel>();
