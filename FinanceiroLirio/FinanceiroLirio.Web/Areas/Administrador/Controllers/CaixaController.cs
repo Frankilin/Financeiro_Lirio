@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class CaixaController : Controller
     {
         // GET: Administrador/Caixa

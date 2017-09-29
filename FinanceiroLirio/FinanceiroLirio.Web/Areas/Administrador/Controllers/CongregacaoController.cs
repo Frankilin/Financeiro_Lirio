@@ -9,11 +9,10 @@ using System.Web.Mvc;
 
 namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 {
-    
+    [Authorize(Roles = "Administrador")]
     public class CongregacaoController : Controller
     {
         // GET: Administrador/Congregacao
-        [Authorize(Roles = "Administrador")]
         public ActionResult Nova()
         {
             try
@@ -36,7 +35,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Administrador")]
         public ActionResult Nova(CadastroCongregacaoModel model)
         {
             try
@@ -81,7 +79,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             return View(model);
         }
 
-        [Authorize(Roles = "Administrador")]
+        
         public ActionResult Lista()
         {
             List<ListaCongregacaoModel> lista = new List<ListaCongregacaoModel>();
