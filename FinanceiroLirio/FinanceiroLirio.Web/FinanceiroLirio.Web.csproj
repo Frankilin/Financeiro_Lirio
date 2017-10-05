@@ -154,7 +154,7 @@
     <Content Include="Areas\Administrador\Views\Congregacao\Nova.cshtml" />
     <Content Include="Areas\Administrador\Views\Congregacao\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
-    <Content Include="Areas\Administrador\Views\Usuario\Nova.cshtml" />
+    <Content Include="Areas\Administrador\Views\Usuario\Novo.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\NovoCaixa.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\ListaCaixas.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
