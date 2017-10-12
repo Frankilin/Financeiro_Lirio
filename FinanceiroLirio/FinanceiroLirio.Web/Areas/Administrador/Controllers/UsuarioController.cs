@@ -18,7 +18,12 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         {
             try
             {
+                GrupoUsuarioBusiness gub = new GrupoUsuarioBusiness();
+
                 var model = new CadastroUsuarioModel();
+
+                model.GrupoUsuario = gub.ListaGrupoUsuarioDropdownList();
+                ViewBag.ListaGrupousuario = gub.ListaGrupoUsuarioDropdownList();
 
                 ViewBag.Title = "Cadastrar usuário";
 
@@ -40,11 +45,13 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 if (ModelState.IsValid)
                 {
                     Usuario user = new Usuario();
+                    GrupoUsuario gu = new GrupoUsuario();
 
                     user.NomeCompleto = model.NomeCompleto;
                     user.Login = model.Login;
                     user.Senha = model.Senha;
                     user.Email = model.Email;
+                    user.IdGrupoUsuario = model.GrupoUsuarioSelecionado;
 
                     UsuarioBusiness ub = new UsuarioBusiness();
 
@@ -83,7 +90,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                     temp.Login        = user.Login;
                     temp.Senha        = user.Senha;
                     temp.Email        = user.Email;
-
+                    
                     lista.Add(temp);
                 }
                 return View(lista);
@@ -95,5 +102,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 return RedirectToAction("Novo", "Home");
             }
         }
+
+
     }
 }

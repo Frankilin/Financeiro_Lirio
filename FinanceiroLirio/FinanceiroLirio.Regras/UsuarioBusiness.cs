@@ -1,11 +1,12 @@
 ﻿using FinanceiroLirio.Entidades;
-using FinanceiroListio.Infra.Persistence;
+using FinanceiroLirio.Infra.Persistence;
 using MinhaSerie.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace FinanceiroLirio.Regras
 {
@@ -87,5 +88,6 @@ namespace FinanceiroLirio.Regras
                 throw e;
             }
         }
+    
     }
 }

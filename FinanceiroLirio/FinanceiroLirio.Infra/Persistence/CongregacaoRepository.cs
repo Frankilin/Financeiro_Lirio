@@ -8,7 +8,7 @@ using FinanceiroLirio.Entidades;
 using FinanceiroLirio.Infra.DataSource;
 using System.Data.Entity;
 
-namespace FinanceiroListio.Infra.Persistence
+namespace FinanceiroLirio.Infra.Persistence
 {
     public class CongregacaoRepository : OperacoesGenericas<Congregacao>
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinanceiroLirio.Entidades;
-using FinanceiroListio.Infra.Persistence;
+using FinanceiroLirio.Infra.Persistence;
 using System.Web.Mvc;
 
 namespace FinanceiroLirio.Regras

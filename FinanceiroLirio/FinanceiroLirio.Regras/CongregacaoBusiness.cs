@@ -1,5 +1,5 @@
 ﻿using FinanceiroLirio.Entidades;
-using FinanceiroListio.Infra.Persistence;
+using FinanceiroLirio.Infra.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,9 +48,9 @@ namespace FinanceiroLirio.Regras
 
                 CongregacaoRepository cr = new CongregacaoRepository();
 
-                c = cr.All();
+                c = cr.All(); 
 
-                if(c == null)
+                if (c == null)
                 {
                     throw new Exception("Nenhuma congregação encontrada.");
                 }

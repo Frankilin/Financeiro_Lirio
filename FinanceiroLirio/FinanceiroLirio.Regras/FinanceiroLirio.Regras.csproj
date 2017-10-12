@@ -74,6 +74,7 @@
     <Compile Include="CongregacaoBusiness.cs" />
     <Compile Include="EnderecoBusiness.cs" />
     <Compile Include="EstadoBusiness.cs" />
+    <Compile Include="GrupoUsuarioBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioBusiness.cs" />
   </ItemGroup>

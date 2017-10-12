@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinanceiroListio.Infra.Persistence
+namespace FinanceiroLirio.Infra.Persistence
 {
     public class CidadeRepository : OperacoesGenericas<Cidade>
     {
@@ -20,6 +20,7 @@ namespace FinanceiroListio.Infra.Persistence
                     return con.Cidade
                                 .Where(c => c.IdEstado == idEstado)
                                 .ToList();
+                    
                 }
             }
             catch(Exception e)

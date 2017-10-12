@@ -1,4 +1,4 @@
-namespace FinanceiroListio.Infra.Migrations
+namespace FinanceiroLirio.Infra.Migrations
 {
     using System;
     using System.Data.Entity;

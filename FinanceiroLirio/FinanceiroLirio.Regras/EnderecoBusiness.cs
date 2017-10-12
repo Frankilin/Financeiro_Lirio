@@ -1,5 +1,5 @@
 ﻿using FinanceiroLirio.Entidades;
-using FinanceiroListio.Infra.Persistence;
+using FinanceiroLirio.Infra.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;

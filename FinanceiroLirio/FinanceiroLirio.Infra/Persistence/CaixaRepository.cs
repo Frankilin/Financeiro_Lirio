@@ -9,7 +9,7 @@ using FinanceiroLirio.Infra.Generics;
 
 
 
-namespace FinanceiroListio.Infra.Persistence
+namespace FinanceiroLirio.Infra.Persistence
 {
     public class CaixaRepository : OperacoesGenericas<Caixa>
     {

@@ -66,6 +66,7 @@
     <Compile Include="Persistence\CongregacaoRepository.cs" />
     <Compile Include="Persistence\EnderecoRepository.cs" />
     <Compile Include="Persistence\EstadoRepository.cs" />
+    <Compile Include="Persistence\GrupoUsuarioRepository.cs" />
     <Compile Include="Persistence\UsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
