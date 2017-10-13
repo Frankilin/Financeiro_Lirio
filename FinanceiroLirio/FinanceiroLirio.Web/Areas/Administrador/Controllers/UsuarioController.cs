@@ -51,6 +51,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                     user.Login = model.Login;
                     user.Senha = model.Senha;
                     user.Email = model.Email;
+                    user.DataCadastro = DateTime.Now;
                     user.IdGrupoUsuario = model.GrupoUsuarioSelecionado;
 
                     UsuarioBusiness ub = new UsuarioBusiness();
@@ -69,7 +70,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
             }
-            return View(model);
+            return RedirectToAction("Novo");
         }
 
         public ActionResult Lista()
