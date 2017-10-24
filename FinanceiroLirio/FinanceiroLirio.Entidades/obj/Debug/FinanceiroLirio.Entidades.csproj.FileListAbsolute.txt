@@ -15,3 +15,9 @@ C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\Financeiro
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.dll
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.pdb
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll.config
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.dll
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\bin\Debug\FinanceiroLirio.Entidades.pdb
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.dll
+C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Entidades\obj\Debug\FinanceiroLirio.Entidades.pdb

@@ -109,14 +109,14 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             }
         }
 
-        public ActionResult Alteracao(int IdUsuario)
+        public ActionResult Alteracao(int id)
         {
             try
             {
                 UsuarioBusiness ub = new UsuarioBusiness();
                 GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
                 AlteracaoUsuario model = new AlteracaoUsuario();
-                Usuario u = ub.FindById(IdUsuario);
+                Usuario u = ub.FindById(id);
 
                 model.GrupoUsuario = gb.ListaGrupoUsuarioDropdownList();
                 model.IdUsuario = u.IdUsuario;

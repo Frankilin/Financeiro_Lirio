@@ -1,12 +1,12 @@
 ﻿using FinanceiroLirio.Entidades;
 using FinanceiroLirio.Infra.Persistence;
-using MinhaSerie.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using FinanceiroLirio.Util;
 
 namespace FinanceiroLirio.Regras
 {
@@ -30,6 +30,7 @@ namespace FinanceiroLirio.Regras
                 u.Ativo = true;
                 u.DataCadastro = DateTime.Now;
                 u.IdGrupoUsuario = 3;
+                u.Senha = Criptografia.CriptografarMD5(u.Senha);
 
                 UsuarioRepository ur = new UsuarioRepository();
 
