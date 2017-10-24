@@ -17,9 +17,7 @@ namespace FinanceiroLirio.Regras
         {
             try
             {
-               
                 GrupoUsuarioRepository gur = new GrupoUsuarioRepository();
-
                 List<GrupoUsuario>  gu = gur.All();
 
                 if (gu == null)
@@ -27,11 +25,9 @@ namespace FinanceiroLirio.Regras
                     throw new Exception("Nenhum grupo usuário foi encontrado");
                 }
                 return gu;
-
             }
             catch (Exception e)
             {
-
                 throw e;
             }
         }
@@ -44,10 +40,9 @@ namespace FinanceiroLirio.Regras
                 List<GrupoUsuario> tmp = this.TodoGrupoUsuario(); 
 
                 var itens = new List<SelectListItem>();
-
                 foreach (GrupoUsuario g in tmp)
                 {
-                    itens.Add(new SelectListItem { Value = g.IdGrupoUsuario.ToString(), Text = g.Descricao });
+                       itens.Add(new SelectListItem { Value = g.IdGrupoUsuario.ToString(), Text = g.Descricao });
                 }
 
                 SelectList sl = new SelectList(itens, "Value", "Text");
@@ -60,6 +55,9 @@ namespace FinanceiroLirio.Regras
                 throw e;
             }
         }
+
+
+
 
     }
 }

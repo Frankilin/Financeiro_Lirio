@@ -5,45 +5,57 @@
     Layout = "~/Views/Shared/_layout.cshtml";
 }
 
-<h4 class="right-align">Lista de usuários</h4><hr />
+<h2>Lista</h2>
 
 <p>
-    @Html.ActionLink("Novo usuários", "Nova", "Usuario")
+    @Html.ActionLink("Create New", "Create")
 </p>
-<table class="striped">
-    <tr>        
+<table class="table">
+    <tr>
         <th>
             @Html.DisplayNameFor(model => model.NomeCompleto)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Login)
-        </th>        
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Senha)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Email)
-        </th>       
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrupoUsuarioSelecionado)
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-    <tr>       
+    <tr>
         <td>
             @Html.DisplayFor(modelItem => item.NomeCompleto)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Login)
-        </td>        
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Senha)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
-        </td>        
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.DataCadastro)
         </td>
         <td>
-           @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.DisplayFor(modelItem => item.GrupoUsuarioSelecionado)
+        </td>
+        <td>
+            @Html.ActionLink("Alteracao", "Alteracao", new {  id=item.IdUsuario}) |
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
             @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
         </td>
     </tr>

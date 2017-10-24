@@ -153,10 +153,11 @@
     <Content Include="Areas\Administrador\Views\Home\Index.cshtml" />
     <Content Include="Areas\Administrador\Views\Congregacao\Nova.cshtml" />
     <Content Include="Areas\Administrador\Views\Congregacao\Lista.cshtml" />
-    <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Novo.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\NovoCaixa.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\ListaCaixas.cshtml" />
+    <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
+    <Content Include="Areas\Administrador\Views\Usuario\Alteracao.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -174,6 +175,7 @@
     <Compile Include="Areas\Administrador\Controllers\CongregacaoController.cs" />
     <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
     <Compile Include="Areas\Administrador\Controllers\UsuarioController.cs" />
+    <Compile Include="Areas\Administrador\Models\AlteracaoUsuario.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCaixaModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroUsuarioModel.cs" />
@@ -240,6 +242,10 @@
     <ProjectReference Include="..\FinanceiroLirio.Entidades\FinanceiroLirio.Entidades.csproj">
       <Project>{09b270c1-361c-432b-93b0-d2ca7f332d1c}</Project>
       <Name>FinanceiroLirio.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinanceiroLirio.Infra\FinanceiroLirio.Infra.csproj">
+      <Project>{A9440CE9-F426-43B7-926D-56842A30F616}</Project>
+      <Name>FinanceiroLirio.Infra</Name>
     </ProjectReference>
     <ProjectReference Include="..\FinanceiroLirio.Regras\FinanceiroLirio.Regras.csproj">
       <Project>{ed460ffe-ef58-4694-a02c-a4fbb72ca2e1}</Project>

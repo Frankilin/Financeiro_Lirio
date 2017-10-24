@@ -15,5 +15,10 @@ namespace FinanceiroLirio.Web
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
 
+        public int GrupoUsuarioSelecionado { get; set; }
+        public SelectList GrupoUsuario { get; set; }
+
+        public int IdUsuario { get; set; }
+
     }
 }

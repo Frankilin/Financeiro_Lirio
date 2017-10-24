@@ -95,7 +95,7 @@
 
                 <div class="row">
                         <div class="input-field col s4">
-                            @Html.DropDownListFor(model => model.GrupoUsuarioSelecionado, Model.GrupoUsuario, "Value", "Text")
+                            @Html.DropDownListFor(model => model.GrupoUsuarioSelecionado, Model.GrupoUsuario, "Selecione um grupo", "Text")
                             @Html.LabelFor(model => model.GrupoUsuarioSelecionado)
                             @Html.ValidationMessageFor(model => model.GrupoUsuarioSelecionado,"", new {@class = "Text-danger"})
                         </div>

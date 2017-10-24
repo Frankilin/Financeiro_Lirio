@@ -72,8 +72,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
             }
-
-            return RedirectToAction("Nova");
+             return RedirectToAction("Nova");
         }
 
         
@@ -88,7 +87,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 foreach (Congregacao o in c)
                 {
                     ListaCongregacaoModel tmp = new ListaCongregacaoModel();
-
                     tmp.Apelido = o.Apelido;
                     tmp.Cidade = o.Endereco.Cidade.Nome;
                     tmp.Estado = o.Endereco.Cidade.Estado.Nome;

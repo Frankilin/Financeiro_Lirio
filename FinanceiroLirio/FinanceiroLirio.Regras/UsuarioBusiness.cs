@@ -77,7 +77,7 @@ namespace FinanceiroLirio.Regras
 
                 if (u == null)
                 {
-                    throw new Exception("Nenhuma usuário encontrada.");
+                    throw new Exception("Nenhum usuário encontrado.");
                 }
 
                 return u;
@@ -87,7 +87,31 @@ namespace FinanceiroLirio.Regras
 
                 throw e;
             }
+       }
+
+
+        public Usuario FindById(int IdUsuario)  
+        {
+            try
+            {
+                Usuario u = null;
+
+                UsuarioRepository ur = new UsuarioRepository();
+
+                u = ur.FindById(IdUsuario);
+
+                if (u == null)
+                {
+                    throw new Exception("Usuário selecionado foi excluido");
+                }
+
+                return u;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
-    
+
     }
 }

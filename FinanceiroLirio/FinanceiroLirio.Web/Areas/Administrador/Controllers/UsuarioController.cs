@@ -1,4 +1,5 @@
 ﻿using FinanceiroLirio.Entidades;
+using FinanceiroLirio.Infra.DataSource;
 using FinanceiroLirio.Regras;
 using FinanceiroLirio.Web.Areas.Administrador.Models;
 using System;
@@ -23,7 +24,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 var model = new CadastroUsuarioModel();
 
                 model.GrupoUsuario = gub.ListaGrupoUsuarioDropdownList();
-                ViewBag.ListaGrupousuario = gub.ListaGrupoUsuarioDropdownList();
+                //ViewBag.ListaGrupousuario = gub.ListaGrupoUsuarioDropdownList();
 
                 ViewBag.Title = "Cadastrar usuário";
 
@@ -70,8 +71,10 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
             }
+            //return view(model);
             return RedirectToAction("Novo");
         }
+
 
         public ActionResult Lista()
         {
@@ -91,6 +94,8 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                     temp.Login        = user.Login;
                     temp.Senha        = user.Senha;
                     temp.Email        = user.Email;
+                    temp.GrupoUsuarioSelecionado = user.IdGrupoUsuario;
+                    temp.IdUsuario = user.IdUsuario;
                     
                     lista.Add(temp);
                 }
@@ -104,6 +109,36 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             }
         }
 
+        public ActionResult Alteracao(int IdUsuario)
+        {
+            try
+            {
+                UsuarioBusiness ub = new UsuarioBusiness();
+                GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
+                AlteracaoUsuario model = new AlteracaoUsuario();
+                Usuario u = ub.FindById(IdUsuario);
 
+                model.GrupoUsuario = gb.ListaGrupoUsuarioDropdownList();
+                model.IdUsuario = u.IdUsuario;
+                model.GrupoUsuarioSelecionado = u.IdGrupoUsuario;
+                model.Nome = u.NomeCompleto;
+                model.Senha = u.Senha;
+
+                return View(model);
+            }
+            catch (Exception e)
+            {
+
+                ViewBag.Mensagem = e.Message;
+                return RedirectToAction("Lista");
+            }
+
+        }
+
+        [HttpPost]
+        public ActionResult Alteracao(AlteracaoUsuario Model)
+        {
+            return View();
+        }
     }
 }
