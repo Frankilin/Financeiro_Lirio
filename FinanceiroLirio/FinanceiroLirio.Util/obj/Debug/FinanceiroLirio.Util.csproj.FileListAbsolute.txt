@@ -3,11 +3,6 @@ C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\Financ
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
 C:\Github\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb
-F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.dll
-F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.pdb
-F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
-F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
-F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.dll
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.pdb
 C:\Users\ivo.junior\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
@@ -18,3 +13,8 @@ C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLiri
 C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
 C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
 C:\Users\CEMERU\Documents\GitHub\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\bin\Debug\FinanceiroLirio.Util.pdb
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.csprojResolveAssemblyReference.cache
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.dll
+F:\Projetos\Financeiro_Lirio\FinanceiroLirio\FinanceiroLirio.Util\obj\Debug\FinanceiroLirio.Util.pdb

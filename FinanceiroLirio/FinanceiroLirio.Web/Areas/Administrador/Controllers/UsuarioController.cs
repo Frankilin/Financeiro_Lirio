@@ -136,8 +136,35 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
         }
 
         [HttpPost]
-        public ActionResult Alteracao(AlteracaoUsuario Model)
+        public ActionResult Alteracao(AlteracaoUsuario model)
         {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    UsuarioBusiness ub = new UsuarioBusiness();
+
+                    Usuario user = ub.FindById(model.IdUsuario);
+                    Usuario temp = new Usuario();
+
+                    temp.IdUsuario = model.IdUsuario;
+                    temp.Login = user.Login;
+                    temp.NomeCompleto = model.Nome;
+                    temp.Senha = model.Senha;
+                    temp.Email = user.Email;
+                    temp.DataCadastro = user.DataCadastro;
+                    temp.IdGrupoUsuario = model.GrupoUsuarioSelecionado;                    
+
+                    ub.Alteracao(temp);
+
+                }
+            }
+            catch (Exception e)
+            {
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                TempData["Resposta"] = "Falha";
+                return RedirectToAction("Lista", "Home");
+            }
             return View();
         }
     }

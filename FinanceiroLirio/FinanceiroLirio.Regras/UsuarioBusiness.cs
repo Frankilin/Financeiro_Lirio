@@ -114,5 +114,27 @@ namespace FinanceiroLirio.Regras
             }
         }
 
+        public Usuario Alteracao(Usuario usuario)
+        {
+            try
+            {
+                UsuarioRepository ur = new UsuarioRepository();
+
+                Usuario user = ur.FindById(usuario.IdUsuario);
+
+                if (user != usuario)
+                {
+                    ur.Update(usuario);
+                }
+
+                return usuario;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
     }
 }
