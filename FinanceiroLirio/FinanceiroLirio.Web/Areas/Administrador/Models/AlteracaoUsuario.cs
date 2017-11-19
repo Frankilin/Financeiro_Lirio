@@ -24,7 +24,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Models
         [Required(ErrorMessage = "Inclua o grupo do usuário")]
         [Display(Name = "Grupo do Usuário")]
         public int GrupoUsuarioSelecionado { get; set; }
-
+        
         public SelectList GrupoUsuario { get; set; }
     }
 }

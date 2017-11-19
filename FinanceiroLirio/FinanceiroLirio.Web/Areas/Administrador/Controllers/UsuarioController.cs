@@ -118,11 +118,11 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 AlteracaoUsuario model = new AlteracaoUsuario();
                 Usuario u = ub.FindById(id);
 
-                model.GrupoUsuario = gb.ListaGrupoUsuarioDropdownList();
-                model.IdUsuario = u.IdUsuario;
-                model.GrupoUsuarioSelecionado = u.IdGrupoUsuario;
-                model.Nome = u.NomeCompleto;
-                model.Senha = u.Senha;
+                model.GrupoUsuario              = gb.ListaGrupoUsuarioDropdownList();
+                model.IdUsuario                 = u.IdUsuario;
+                model.GrupoUsuarioSelecionado   = u.IdGrupoUsuario;
+                model.Nome                      = u.NomeCompleto;
+                model.Senha                     = u.Senha;
 
                 return View(model);
             }
@@ -143,17 +143,18 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                 if (ModelState.IsValid)
                 {
                     UsuarioBusiness ub = new UsuarioBusiness();
-
+                    GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
                     Usuario user = ub.FindById(model.IdUsuario);
                     Usuario temp = new Usuario();
 
-                    temp.IdUsuario = model.IdUsuario;
-                    temp.Login = user.Login;
-                    temp.NomeCompleto = model.Nome;
-                    temp.Senha = model.Senha;
-                    temp.Email = user.Email;
-                    temp.DataCadastro = user.DataCadastro;
-                    temp.IdGrupoUsuario = model.GrupoUsuarioSelecionado;                    
+                    temp.IdUsuario          = model.IdUsuario;
+                    temp.Login              = user.Login;
+                    temp.NomeCompleto       = model.Nome;
+                    temp.Senha              = model.Senha;
+                    temp.Email              = user.Email;
+                    temp.DataCadastro       = user.DataCadastro;
+                    temp.IdGrupoUsuario     = model.GrupoUsuarioSelecionado;
+                    model.GrupoUsuario      = gb.ListaGrupoUsuarioDropdownList();
 
                     ub.Alteracao(temp);
 
@@ -163,7 +164,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Lista", "Home");
+                return RedirectToAction("Lista");
             }
             return View();
         }
