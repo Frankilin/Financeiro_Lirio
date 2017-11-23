@@ -164,9 +164,10 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                return RedirectToAction("Lista");
+                //return RedirectToAction("Lista");
             }
-            return View();
+            //return View();
+            return RedirectToAction("Lista");
         }
     }
 }
