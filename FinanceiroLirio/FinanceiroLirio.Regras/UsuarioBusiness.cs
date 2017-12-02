@@ -49,7 +49,7 @@ namespace FinanceiroLirio.Regras
             Usuario u = null;
             try
             {
-                if(login == null || senha == null)
+                if (login == null || senha == null)
                 {
                     throw new Exception("Login e/ou senha inválidos. Tente novamente.");
                 }
@@ -59,7 +59,7 @@ namespace FinanceiroLirio.Regras
                 u = ur.FindByLoginSenha(login, Criptografia.CriptografarMD5(senha));
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -88,10 +88,10 @@ namespace FinanceiroLirio.Regras
 
                 throw e;
             }
-       }
+        }
 
 
-        public Usuario FindById(int IdUsuario)  
+        public Usuario FindById(int IdUsuario)
         {
             try
             {
@@ -128,6 +128,32 @@ namespace FinanceiroLirio.Regras
                 }
 
                 return usuario;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+
+        public void Delete(Usuario usuario)
+        {
+            try
+            {
+                UsuarioRepository ur = new UsuarioRepository();
+
+                Usuario user = ur.FindById(usuario.IdUsuario);
+
+                if (user != null)
+                {
+                    ur.Delete(usuario);
+                }
+                else
+                {
+                    throw new Exception("Usuário não encontrado");
+                }
+
             }
             catch (Exception e)
             {

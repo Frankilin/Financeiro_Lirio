@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 {
@@ -92,7 +93,6 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
 
                     temp.NomeCompleto = user.NomeCompleto;
                     temp.Login        = user.Login;
-                    temp.Senha        = user.Senha;
                     temp.Email        = user.Email;
                     temp.GrupoUsuarioSelecionado = user.IdGrupoUsuario;
                     temp.IdUsuario = user.IdUsuario;
@@ -147,14 +147,14 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
                     Usuario user = ub.FindById(model.IdUsuario);
                     Usuario temp = new Usuario();
 
-                    temp.IdUsuario          = model.IdUsuario;
-                    temp.Login              = user.Login;
-                    temp.NomeCompleto       = model.Nome;
-                    temp.Senha              = model.Senha;
-                    temp.Email              = user.Email;
-                    temp.DataCadastro       = user.DataCadastro;
-                    temp.IdGrupoUsuario     = model.GrupoUsuarioSelecionado;
-                    model.GrupoUsuario      = gb.ListaGrupoUsuarioDropdownList();
+                    temp.IdUsuario = model.IdUsuario;
+                    temp.Login = user.Login;
+                    temp.NomeCompleto = model.Nome;
+                    temp.Senha = model.Senha;
+                    temp.Email = user.Email;
+                    temp.DataCadastro = user.DataCadastro;
+                    temp.IdGrupoUsuario = model.GrupoUsuarioSelecionado;
+                    model.GrupoUsuario = gb.ListaGrupoUsuarioDropdownList();
 
                     ub.Alteracao(temp);
 
@@ -164,10 +164,65 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 TempData["Mensagem"] = "Erro: " + e.Message;
                 TempData["Resposta"] = "Falha";
-                //return RedirectToAction("Lista");
             }
-            //return View();
             return RedirectToAction("Lista");
         }
+       
+
+        public ActionResult Delete(int Id)
+        {
+            try
+            {
+                UsuarioBusiness ub = new UsuarioBusiness();
+                Usuario user = ub.FindById(Id);
+                DeleteUsuarioModel temp = new DeleteUsuarioModel();
+
+                temp.IdUsuario = user.IdUsuario;
+                temp.Nome = user.NomeCompleto;
+                temp.Email = user.Email;
+
+                return View(temp);
+
+            }
+            catch (Exception e)
+            {
+
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                return RedirectToAction("Lista");
+            }
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(DeleteUsuarioModel user)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
+                    UsuarioBusiness ub = new UsuarioBusiness();
+                    Usuario temp = ub.FindById(user.IdUsuario);
+
+                    //if (user == ub.FindById(Id))
+                    //{
+                    //    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertmessage", "javascript:if (confirm('" + "Deseja excluir o usuário:" + user.NomeCompleto + "?')).click();")
+                    //} 
+
+                    //user.GrupoUsuario = gb.ListaGrupoUsuarioDropdownList();
+                    ub.Delete(temp);
+                    
+                }
+                return RedirectToAction("Lista");
+            }
+            catch (Exception e)
+            {
+
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                return RedirectToAction("Lista");
+            }
+        }
+        
     }
 }
