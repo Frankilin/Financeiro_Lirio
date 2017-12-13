@@ -72,5 +72,74 @@ namespace FinanceiroLirio.Regras
                 throw e;
             }
         }
+
+        public Caixa FindById(int IdCaixa)
+        {
+            try
+            {
+                CaixaRepository cr = new CaixaRepository();
+
+                Caixa caixa = cr.FindById(IdCaixa);
+
+                if (caixa == null)
+                {
+                    throw new Exception("Caixa selecionada foi excluído");
+                }
+
+                return caixa; 
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+        public Caixa Alteracao(Caixa caixa)
+        {
+            try
+            {
+
+                CaixaRepository cr = new CaixaRepository();
+
+                Caixa temp = this.FindById(caixa.IdCaixa);
+
+                if (temp != caixa)
+                {
+                    cr.Update(caixa);
+                }
+
+                return caixa;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
+
+        public void delete(Caixa caixa)
+        {
+            try
+            {
+                CaixaRepository cr = new CaixaRepository();
+
+                Caixa temp = this.FindById(caixa.IdCaixa);
+
+                if (temp != null)
+                {
+                    cr.Delete(temp);
+                }
+                else
+                {
+                    throw new Exception("Caixa não encontrada");
+                }
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
     }
 }
