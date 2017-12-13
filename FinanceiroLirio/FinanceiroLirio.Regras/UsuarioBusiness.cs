@@ -120,7 +120,8 @@ namespace FinanceiroLirio.Regras
             {
                 UsuarioRepository ur = new UsuarioRepository();
 
-                Usuario user = ur.FindById(usuario.IdUsuario);
+                //Usar a function criada acima, ao invés a do UsuarioRepository.
+                Usuario user = this.FindById(usuario.IdUsuario);
 
                 if (user != usuario)
                 {
