@@ -201,7 +201,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
+                    //GrupoUsuarioBusiness gb = new GrupoUsuarioBusiness();
                     UsuarioBusiness ub = new UsuarioBusiness();
                     Usuario temp = ub.FindById(user.IdUsuario);
 

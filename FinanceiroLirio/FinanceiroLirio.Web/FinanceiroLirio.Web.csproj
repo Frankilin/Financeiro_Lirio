@@ -155,10 +155,12 @@
     <Content Include="Areas\Administrador\Views\Congregacao\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Novo.cshtml" />
     <Content Include="Areas\Administrador\Views\Caixa\NovoCaixa.cshtml" />
-    <Content Include="Areas\Administrador\Views\Caixa\ListaCaixas.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Lista.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Alteracao.cshtml" />
     <Content Include="Areas\Administrador\Views\Usuario\Delete.cshtml" />
+    <Content Include="Areas\Administrador\Views\Caixa\Delete.cshtml" />
+    <Content Include="Areas\Administrador\Views\Caixa\ListaCaixas.cshtml" />
+    <Content Include="Areas\Administrador\Views\Caixa\Alteracao.cshtml" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -176,10 +178,12 @@
     <Compile Include="Areas\Administrador\Controllers\CongregacaoController.cs" />
     <Compile Include="Areas\Administrador\Controllers\HomeController.cs" />
     <Compile Include="Areas\Administrador\Controllers\UsuarioController.cs" />
+    <Compile Include="Areas\Administrador\Models\AlteracaoCaixa.cs" />
     <Compile Include="Areas\Administrador\Models\AlteracaoUsuario.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCaixaModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroCongregacaoModel.cs" />
     <Compile Include="Areas\Administrador\Models\CadastroUsuarioModel.cs" />
+    <Compile Include="Areas\Administrador\Models\DeleteCaixaModel.cs" />
     <Compile Include="Areas\Administrador\Models\DeleteUsuarioModel.cs" />
     <Compile Include="Areas\Administrador\Models\ListaCaixasModel.cs" />
     <Compile Include="Areas\Administrador\Models\ListaCongregacaoModel.cs" />
