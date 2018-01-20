@@ -8,6 +8,7 @@ namespace FinanceiroLirio.Web.Areas.Administrador.Models
 {
     public class ListaCaixasModel
     {
+        public int IdCaixa { get; set; }
         public int CongregacaoSelecionada { get; set; }
         public string Descricao { get; set; }
         public decimal SaldoInicial { get; set; }
